@@ -1,0 +1,15 @@
+name: compose_ci
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-lestest
+    steps: 
+      - name: check out 
+      - uses: actions/checkout@v5.0.0
+      - name: JVM build 
+      - uses: actions/setup-java@v5.0.0
+        with: java-version:8
+         
